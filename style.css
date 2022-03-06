@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #667588;
+}
+
+.main-container {
+  border: none;
+  width: auto;
+  margin: 50px;
+  height: 160vh;
+  display: flex;
+  /* overflow: hidden; */
+  /* border: 3px solid red; */
+}
+
+/* Host */
+.host-container {
+  background-color: #28314e;
+  /* border: 2px solid red; */
+  width: 50%;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Registration */
+.registraion {
+  background-color: white;
+  /* border: 2px solid green; */
+  height: 150vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+/* Host content */
+.host-content {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  /* border: 2px solid red; */
+}
+
+.host-content > .heading {
+  font-size: 40px;
+}
+
+.host-content > .heading,
+.pchild {
+  margin: 25px 20px;
+  padding: 12px 12px;
+}
+
+.pchild,
+.hostpchild {
+  font-size: 20px;
+}
+
+/* Registration Content */
+.user-content {
+  margin: 10px;
+  /* border: 2px solid red; */
+}
+
+.user-content > .heading {
+  text-align: center;
+  font-size: 40px;
+}
+
+.user-content > .heading,
+.pchild {
+  margin: 5px 20px;
+}
+
+.user-inputs {
+  padding: 2px 30px;
+}
+
+span {
+  display: block;
+  margin-bottom: 2px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  width: 200px;
+  margin: 8px 0px;
+  border: 1px solid #7c89b36b;
+  border-radius: 3px;
+}
+
+input[type="email"],
+input[type="number"] {
+  margin: 8px 0px;
+  padding: 15px;
+  width: 31.51vw;
+  border: 1px solid #7c89b36b;
+  border-radius: 3px;
+}
+
+.inline {
+  display: inline;
+  color: #667588;
+}
+.gender {
+  font-size: 20px;
+}
+
+select {
+  margin-bottom: 4px;
+  padding: 15px;
+  width: 31.51vw;
+  border: 1px solid #7c89b36b;
+  border-radius: 3px;
+  color: lightslategray;
+  background-color: white;
+}
+
+.button {
+  margin-top: 5px;
+}
+
+.button1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #006dfc;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.button2 {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #006dfc;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+.button1:hover,
+.button2:hover {
+  background-color: #1f5fb8;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+/* Applying Media Quries to resposive all devices*/
+/* For Desktop View */
+/* @media screen and (min-width: 1024px) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+} */
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .host-container, .registraion{
+    width: 100%;
+  }
+}
+/* -------------- */
+/* Connect via google spread sheet */
+/* Finaly Host in github and genrate link github.io */
